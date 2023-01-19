@@ -9,7 +9,7 @@
         // Current Day (   Moment.js = "moment().format('dddd');  )
         // Current Date (   Moment.js = "moment().format('MMMM Do YYYY');   )
 
-// Create Variabel For Full Date
+// Create Variable For Full Date
         // Full Date = Current Day + Current Date
         // Display Full Date On Web Page
 
