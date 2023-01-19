@@ -81,60 +81,179 @@ function TenAM() {
 TenAM();
 
 // Function For 11AM
-        // IF Current Time < 11AM
-            // Mark Time Block As Future
+function ElevenAM() {
+    // IF Current Time < 11AM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('11am', 'ha'))) {
+        // Mark Time Block As Future
+        $("#11AM").addClass("future");
+        $("#11AM-Notes").addClass("future");
+        console.log("The Time Is Before 11AM");
         // ELSE IF Current Time = 11AM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('11am', 'ha'))) {
+        // Mark Time Block As Current
+        $("#11AM").addClass("present");
+        $("#11AM-Notes").addClass("present");
+        console.log("The Time Is 11AM");
         // ELSE IF Current Time > 11AM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#11AM").addClass("past");
+        $("#11AM-Notes").addClass("past");
+        console.log("The Time Is After 11AM");
+    }
+}
+ElevenAM();
 
 // Function For 12PM
-        // IF Current Time < 12PM
-            // Mark Time Block As Future
+function TwelvePM() {
+    // IF Current Time < 12PM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('12pm', 'ha'))) {
+        // Mark Time Block As Future
+        $("#12PM").addClass("future");
+        $("#12PM-Notes").addClass("future");
+        console.log("The Time Is Before 12PM");
         // ELSE IF Current Time = 12PM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('12pm', 'ha'))) {
+        // Mark Time Block As Current
+        $("#12PM").addClass("present");
+        $("#12PM-Notes").addClass("present");
+        console.log("The Time Is 12PM");
         // ELSE IF Current Time > 12PM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#12PM").addClass("past");
+        $("#12PM-Notes").addClass("past");
+        console.log("The Time Is After 12PM");
+    }
+}
+TwelvePM();
 
 // Function For 1PM
-        // IF Current Time < 1PM
-            // Mark Time Block As Future
+function OnePM() {
+    // IF Current Time < 1PM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('1pm', 'ha'))) {
+        // Mark Time Block As Future
+        $("#1PM").addClass("future");
+        $("#1PM-Notes").addClass("future");
+        console.log("The Time Is Before 1PM");
         // ELSE IF Current Time = 1PM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('1pm', 'ha'))) {
+        // Mark Time Block As Current
+        $("#1PM").addClass("present");
+        $("#1PM-Notes").addClass("present");
+        console.log("The Time Is 1PM");
         // ELSE IF Current Time > 1PM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#1PM").addClass("past");
+        $("#1PM-Notes").addClass("past");
+        console.log("The Time Is After 1PM");
+    }
+}
+OnePM();
 
 // Function For 2PM
-        // IF Current Time < 2PM
-            // Mark Time Block As Future
+function TwoPM() {
+    // IF Current Time < 2PM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('2pm', 'ha'))) {
+        // Mark Time Block As Future
+        $("#2PM").addClass("future");
+        $("#2PM-Notes").addClass("future");
+        console.log("The Time Is Before 2PM");
         // ELSE IF Current Time = 2PM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('2pm', 'ha'))) {
+        // Mark Time Block As Current
+        $("#2PM").addClass("present");
+        $("#2PM-Notes").addClass("present");
+        console.log("The Time Is 2PM");
         // ELSE IF Current Time > 2PM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#2PM").addClass("past");
+        $("#2PM-Notes").addClass("past");
+        console.log("The Time Is After 2PM");
+    }
+}
+TwoPM();
 
 // Function For 3PM
-        // IF Current Time < 3PM
-            // Mark Time Block As Future
+function ThreePM() {
+    // IF Current Time < 3PM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('3pm', 'ha'))) {
+        // Mark Time Block As Future
+        $("#3PM").addClass("future");
+        $("#3PM-Notes").addClass("future");
+        console.log("The Time Is Before 3PM");
         // ELSE IF Current Time = 3PM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('3pm', 'ha'))) {
+        // Mark Time Block As Current
+        $("#3PM").addClass("present");
+        $("#3PM-Notes").addClass("present");
+        console.log("The Time Is 3PM");
         // ELSE IF Current Time > 3PM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#3PM").addClass("past");
+        $("#3PM-Notes").addClass("past");
+        console.log("The Time Is After 3PM");
+    }
+}
+ThreePM();
 
 // Function For 4PM
-        // IF Current Time < 4PM
-            // Mark Time Block As Future
+function FourPM() {
+    // IF Current Time < 4PM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('4pm', 'ha'))) {
+        // Mark Time Block As Future
+        $("#4PM").addClass("future");
+        $("#4PM-Notes").addClass("future");
+        console.log("The Time Is Before 4PM");
         // ELSE IF Current Time = 4PM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('4pm', 'ha'))) {
+        // Mark Time Block As Current
+        $("#4PM").addClass("present");
+        $("#4PM-Notes").addClass("present");
+        console.log("The Time Is 4PM");
         // ELSE IF Current Time > 4PM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#4PM").addClass("past");
+        $("#4PM-Notes").addClass("past");
+        console.log("The Time Is After 4PM");
+    }
+}
+FourPM();
 
 // Function For 5PM
-        // IF Current Time < 5PM
-            // Mark Time Block As Future
-        // ELSE IF Current Time = 5PM
-            // Mark Time Block As Current
+function FivePM() {
+    // IF Current Time < 5PM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('5pm', 'ha'))) {
+        // Mark Time Block As Future
+        $("#5PM").addClass("future");
+        $("#5PM-Notes").addClass("future");
+        console.log("The Time Is Before 5PM");
+        // ELSE IF Current Time = 4PM
+    } else if (moment(CurrentTime, "ha").isSame(moment('5pm', 'ha'))) {
+        // Mark Time Block As Current
+        $("#5PM").addClass("present");
+        $("#5PM-Notes").addClass("present");
+        console.log("The Time Is 5PM");
         // ELSE IF Current Time > 5PM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#5PM").addClass("past");
+        $("#5PM-Notes").addClass("past");
+        console.log("The Time Is After 5PM");
+    }
+}
+FivePM();
 
 // Store User Input (The To Dos) To Local Storage - PER HOUR
         // WHEN User Clicks SAVE Button For An Hour Slot
