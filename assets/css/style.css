@@ -14,6 +14,7 @@ textarea {
   color: #000000;
   border-left: 1px solid #24527a;
   padding: 10px;
+  font-weight: bold;
 }
 
 /* Styling Relating To The Jumbotron Class */
@@ -56,20 +57,20 @@ textarea {
 
 /* Styling Relating To The Past Class */
 .past {
-  background-color: #ff6961;
+  background-color: #eb2632;
   color: white;
 }
 
 /* Styling Relating To The Present Class */
 .present {
-  background-color: orange;
+  background-color: #E59A12;
   color: white;
 }
 
 /* Styling Relating To The Future Class */
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: #60B867;
+  color: #031A0C;
 }
 
 /* Styling Relating To The SaveBtn Class */
