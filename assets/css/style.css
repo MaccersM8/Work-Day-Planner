@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #e0ebeb;
 }
 
 /* Styling Relating To The TextArea Element */
@@ -11,22 +12,25 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid #24527a;
   padding: 10px;
 }
 
 /* Styling Relating To The Jumbotron Class */
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: #24527a;
+  color: #e0ebeb;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #5dacbd;
 }
 
 /* Styling Relating To The Description Class */
 .description {
   white-space: pre-wrap;
+  border: 3px solid #24527a;
+  border-radius: 15px;
+  background-color: #a7bcb9;
 }
 
 /* Styling Relating To The Time-Block Class */
@@ -45,9 +49,9 @@ textarea {
 
 /* Styling Relating To The Hour Class */
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: #24527a;
+  color: #e0ebeb;
+  border: 3px solid #5dacbd;
 }
 
 /* Styling Relating To The Past Class */
@@ -70,11 +74,10 @@ textarea {
 
 /* Styling Relating To The SaveBtn Class */
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  border: 3px solid #5dacbd;
+  border-radius: 15px;
+  background-color: #24527a;
+  color: #a7bcb9;
   font-size: 30px;
 }
 
