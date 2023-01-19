@@ -1,106 +1,106 @@
 <!-- Essential Elements For A HTML Document -->
 <!DOCTYPE html>
 <html lang="en-gb">
-  <!-- Head Element For HTML Document -->
-  <head>
-    <!-- Meta Tags Needed For HTML Document -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- External Link For Bootsrap Components -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <!-- External Link For FontAwesome Components -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <!-- External Link For Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Link For External CSS Style Sheet -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- Title For Webpage-->
-    <title>Work Day Planner</title>
-  </head>
-  <!-- Body Element For HMTL Document -->
-  <body>
-    <!-- Header Element For HTML Document (Bootstrap Jumbotron)-->
-    <header class="jumbotron">
-      <!-- Title For Planner -->
-      <h1 class="display-3">Work Day Planner</h1>
-      <!-- Subheading For Planner -->
-      <p class="lead">A Simple Calendar App For Scheduling Your Work Day</p>
-      <p id="currentDay" class="lead"></p>
-      <p id="currentTime" class="lead"></p>
-    </header>
-    <!-- Div Container For The Timeblocks To Go Into -->
-    <div class="container">
-      <!-- Div Element For Bootstrap Container-Fluid -->
-      <div class="container-fluid">
-        <!-- Div Element For Row -->
-        <div class="row">
+<!-- Head Element For HTML Document -->
 
-          <!-- Row For 9AM Time Block -->
-          <div class="hour time-block col-1" id="9AM"><strong>9AM</strong></div>
-          <textarea class="description col-10" rows="5" id="9AM-Notes"></textarea>
-          <button class="saveBtn col-1" id="9AM-Save"><i class="fas fa-save"></i></button>
+<head>
+  <!-- Meta Tags Needed For HTML Document -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- External Link For Bootsrap Components -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- External Link For FontAwesome Components -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- External Link For Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- Link For External CSS Style Sheet -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Title For Webpage-->
+  <title>Work Day Planner</title>
+</head>
+<!-- Body Element For HMTL Document -->
 
-          <!-- Row For 10AM Time Block -->
-          <div class="hour time-block col-1" id="10AM"><strong>10AM</strong></div>
-          <textarea class="description col-10" rows="5" id="10AM-Notes"></textarea>
-          <button class="saveBtn col-1" id="10AM-Save"><i class="fas fa-save"></i></button>
+<body>
+  <!-- Header Element For HTML Document (Bootstrap Jumbotron)-->
+  <header class="jumbotron">
+    <!-- Title For Planner -->
+    <h1 class="display-3">Work Day Planner</h1>
+    <!-- Subheading For Planner -->
+    <p class="lead">A Simple Calendar App For Scheduling Your Work Day</p>
+    <p id="currentDay" class="lead"></p>
+    <p id="currentTime" class="lead"></p>
+    <p id="UserNotice">Please Note That All Tasks Will Be Cleared At 11PM Every Day!</p>
+  </header>
+  <!-- Div Container For The Timeblocks To Go Into -->
+  <div class="container">
+    <!-- Div Element For Bootstrap Container-Fluid -->
+    <div class="container-fluid">
+      <!-- Div Element For Row -->
+      <div class="row">
 
-          <!-- Row For 11AM Time Block -->
-          <div class="hour time-block col-1" id="11AM"><strong>11AM</strong></div>
-          <textarea class="description col-10" rows="5" id="11AM-Notes"></textarea>
-          <button class="saveBtn col-1" id="11AM-Save"><i class="fas fa-save"></i></button>
+        <!-- Row For 9AM Time Block -->
+        <div class="hour time-block col-1" id="9AM"><strong>9AM</strong></div>
+        <textarea class="description col-10" rows="5" id="9AM-Notes"></textarea>
+        <button class="saveBtn col-1" id="9AM-Save"><i class="fas fa-save"></i></button>
 
-          <!-- Row For 12PM Time Block -->
-          <div class="hour time-block col-1" id="12PM"><strong>12PM</strong></div>
-          <textarea class="description col-10" rows="5" id="12PM-Notes"></textarea>
-          <button class="saveBtn col-1" id="12PM-Save"><i class="fas fa-save"></i></button>
+        <!-- Row For 10AM Time Block -->
+        <div class="hour time-block col-1" id="10AM"><strong>10AM</strong></div>
+        <textarea class="description col-10" rows="5" id="10AM-Notes"></textarea>
+        <button class="saveBtn col-1" id="10AM-Save"><i class="fas fa-save"></i></button>
 
-          <!-- Row For 1PM Time Block -->
-          <div class="hour time-block col-1" id="1PM"><strong>1PM</strong></div>
-          <textarea class="description col-10" rows="5" id="1PM-Notes"></textarea>
-          <button class="saveBtn col-1" id="1PM-Save"><i class="fas fa-save"></i></button>
-          
-          <!-- Row For 2PM Time Block -->
-          <div class="hour time-block col-1" id="2PM"><strong>2PM</strong></div>
-          <textarea class="description col-10" rows="5" id="2PM-Notes"></textarea>
-          <button class="saveBtn col-1" id="2PM-Save"><i class="fas fa-save"></i></button>
+        <!-- Row For 11AM Time Block -->
+        <div class="hour time-block col-1" id="11AM"><strong>11AM</strong></div>
+        <textarea class="description col-10" rows="5" id="11AM-Notes"></textarea>
+        <button class="saveBtn col-1" id="11AM-Save"><i class="fas fa-save"></i></button>
 
-          <!-- Row For 3PM Time Block -->
-          <div class="hour time-block col-1" id="3PM"><strong>3PM</strong></div>
-          <textarea class="description col-10" rows="5" id="3PM-Notes"></textarea>
-          <button class="saveBtn col-1" id="3PM-Save"><i class="fas fa-save"></i></button>
+        <!-- Row For 12PM Time Block -->
+        <div class="hour time-block col-1" id="12PM"><strong>12PM</strong></div>
+        <textarea class="description col-10" rows="5" id="12PM-Notes"></textarea>
+        <button class="saveBtn col-1" id="12PM-Save"><i class="fas fa-save"></i></button>
 
-          <!-- Row For 4PM Time Block -->
-          <div class="hour time-block col-1" id="4PM"><strong>4PM</strong></div>
-          <textarea class="description col-10" rows="5" id="4PM-Notes"></textarea>
-          <button class="saveBtn col-1" id="4PM-Save"><i class="fas fa-save"></i></button>
+        <!-- Row For 1PM Time Block -->
+        <div class="hour time-block col-1" id="1PM"><strong>1PM</strong></div>
+        <textarea class="description col-10" rows="5" id="1PM-Notes"></textarea>
+        <button class="saveBtn col-1" id="1PM-Save"><i class="fas fa-save"></i></button>
 
-          <!-- Row For 5PM Time Block -->
-          <div class="hour time-block col-1" id="5PM"><strong>5PM</strong></div>
-          <textarea class="description col-10" rows="5" id="5PM-Notes"></textarea>
-          <button class="saveBtn col-1" id="5PM-Save"><i class="fas fa-save"></i></button>
+        <!-- Row For 2PM Time Block -->
+        <div class="hour time-block col-1" id="2PM"><strong>2PM</strong></div>
+        <textarea class="description col-10" rows="5" id="2PM-Notes"></textarea>
+        <button class="saveBtn col-1" id="2PM-Save"><i class="fas fa-save"></i></button>
 
+        <!-- Row For 3PM Time Block -->
+        <div class="hour time-block col-1" id="3PM"><strong>3PM</strong></div>
+        <textarea class="description col-10" rows="5" id="3PM-Notes"></textarea>
+        <button class="saveBtn col-1" id="3PM-Save"><i class="fas fa-save"></i></button>
+
+        <!-- Row For 4PM Time Block -->
+        <div class="hour time-block col-1" id="4PM"><strong>4PM</strong></div>
+        <textarea class="description col-10" rows="5" id="4PM-Notes"></textarea>
+        <button class="saveBtn col-1" id="4PM-Save"><i class="fas fa-save"></i></button>
+
+        <!-- Row For 5PM Time Block -->
+        <div class="hour time-block col-1" id="5PM"><strong>5PM</strong></div>
+        <textarea class="description col-10" rows="5" id="5PM-Notes"></textarea>
+        <button class="saveBtn col-1" id="5PM-Save"><i class="fas fa-save"></i></button>
+
+        <div class="col-12">
+          <br>
+        </div>
+        <div class="col-12">Stay Productive!!</div>
+        <div class="col-12">
+          <br>
         </div>
       </div>
-
     </div>
-    <!-- External Link To jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- External Link To Moment.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!-- External Link To External JavaScript File -->
-    <script src="./assets/js/script.js"></script>
-  </body>
+  </div>
+  <!-- External Link To jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- External Link To Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- External Link To External JavaScript File -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
