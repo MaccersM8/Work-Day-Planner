@@ -1,5 +1,3 @@
-// PSUEDOCODE FOR PROGRAM
-
 // Create Variable For Time Of Given Day
 // Current Hour (   Moment.js = moment().format('h')   )
 var CurrentHour = moment().format('h');
@@ -12,12 +10,13 @@ var CurrentTime = moment().format('ha');
 console.log("The Current Time To The Nearest Hour Is " + CurrentTime);
 
 // Create Variable For Date Of Given Day
-// Current Day (   Moment.js = "moment().format('dddd');  )
+// Current Day (   Moment.js = moment().format('dddd')  )
 var CurrentDay = moment().format('dddd');
 console.log("Today Is " + CurrentDay);
-// Current Date (   Moment.js = "moment().format('MMMM Do YYYY');   )
+// Current Date (   Moment.js = moment().format('MMMM Do YYYY')   )
 var CurrentDate = moment().format('Do MMMM YYYY');
 console.log("The Current Date Is " + CurrentDate);
+
 // Create Variable For Full Date
 // Full Date = Current Day + Current Date
 var FullDate = moment().format('dddd Do MMMM YYYY');
@@ -25,24 +24,61 @@ console.log("The Full Date Is " + FullDate);
 // Display Full Date On Web Page
 $("#currentDay").text(FullDate);
 
+// Create Variable For The Full Time Of Current Time
+// Full Time = (   Moment.js = moment().format('h:mm a')   )
 var FullTime = moment().format('h:mm a');
+console.log("The Full Time Is " + FullTime);
+// Display Full Time On Web Page
 $('#currentTime').text("Time: " + FullTime);
 
 // Function For 9AM
-        // IF Current Time < 9AM
-            // Mark Time Block As Future
+function NineAM() {
+    // IF Current Time < 9AM
+    if (moment(CurrentTime, "ha").isBefore(moment('9am', 'ha'))) {
+        // Mark Time Block As Future
+        $("#9AM").addClass("future");
+        $("#9AM-Notes").addClass("future");
+        console.log("The Time Is Before 9AM");
         // ELSE IF Current Time = 9AM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('9am', 'ha'))) {
+        // Mark Time Block As Current
+        $("#9AM").addClass("present");
+        $("#9AM-Notes").addClass("present");
+        console.log("The Time Is 9AM");
         // ELSE IF Current Time > 9AM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#9AM").addClass("past");
+        $("#9AM-Notes").addClass("past");
+        console.log("The Time Is After 9AM");
+    }
+}
+NineAM();
 
 // Function For 10AM
-        // IF Current Time < 10AM
-            // Mark Time Block As Future
+function TenAM() {
+    // IF Current Time < 10AM
+    // Mark Time Block As Future
+    if (moment(CurrentTime, "ha").isBefore(moment('10am', 'ha'))) {
+        // Mark Time Block As Future
+        $("#10AM").addClass("future");
+        $("#10AM-Notes").addClass("future");
+        console.log("The Time Is Before 10AM");
         // ELSE IF Current Time = 10AM
-            // Mark Time Block As Current
+    } else if (moment(CurrentTime, "ha").isSame(moment('10am', 'ha'))) {
+        // Mark Time Block As Current
+        $("#10AM").addClass("present");
+        $("#10AM-Notes").addClass("present");
+        console.log("The Time Is 10AM");
         // ELSE IF Current Time > 10AM
-            // Mark Time Block As Past
+    } else {
+        // Mark Time Block As Past
+        $("#10AM").addClass("past");
+        $("#10AM-Notes").addClass("past");
+        console.log("The Time Is After 10AM");
+    }
+}
+TenAM();
 
 // Function For 11AM
         // IF Current Time < 11AM
