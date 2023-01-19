@@ -256,9 +256,96 @@ function FivePM() {
 FivePM();
 
 // Store User Input (The To Dos) To Local Storage - PER HOUR
-        // WHEN User Clicks SAVE Button For An Hour Slot
-            // Create Variable For Each Hour User Input
-            // Save To Local Storage
+// WHEN User Clicks SAVE Button For An Hour Slot
+// 9AM NOTES
+$("#9AM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes9AM =  $("#9AM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("9AM-Notes", SavedNotes9AM);
+    console.log("Saved Agenda Item For 9AM: " + SavedNotes9AM);
+})
+
+// 10AM NOTES
+$("#10AM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes10AM =  $("#10AM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("10AM-Notes", SavedNotes10AM);
+    console.log("Saved Agenda Item For 10AM: " + SavedNotes10AM);
+})
+
+// 11AM NOTES
+$("#11AM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes11AM =  $("#11AM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("11AM-Notes", SavedNotes11AM);
+    console.log("Saved Agenda Item For 11AM: " + SavedNotes11AM);
+})
+
+// 12PM NOTES
+$("#12PM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes12PM =  $("#12PM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("12PM-Notes", SavedNotes12PM);
+    console.log("Saved Agenda Item For 12PM: " + SavedNotes12PM);
+})
+
+// 1PM NOTES
+$("#1PM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes1PM =  $("#1PM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("1PM-Notes", SavedNotes1PM);
+    console.log("Saved Agenda Item For 1PM: " + SavedNotes1PM);
+})
+
+// 2PM NOTES
+$("#2PM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes2PM =  $("#2PM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("12PM-Notes", SavedNotes2PM);
+    console.log("Saved Agenda Item For 2PM: " + SavedNotes2PM);
+})
+
+// 3PM NOTES
+$("#3PM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes3PM =  $("#3PM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("3PM-Notes", SavedNotes3PM);
+    console.log("Saved Agenda Item For 3PM: " + SavedNotes3PM);
+})
+
+// 4PM NOTES
+$("#4PM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes4PM =  $("#4PM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("4PM-Notes", SavedNotes4PM);
+    console.log("Saved Agenda Item For 4PM: " + SavedNotes4PM);
+})
+
+// 5PM NOTES
+$("#5PM-Save").on("click",function(event){
+    event.preventDefault();
+    // Create Variable For Each Hour User Input
+    var SavedNotes5PM =  $("#5PM-Notes").val().trim();
+    // Save To Local Storage
+    localStorage.setItem("5PM-Notes", SavedNotes5PM);
+    console.log("Saved Agenda Item For 5PM: " + SavedNotes5PM);
+})
 
 // Load User Input (The To Dos) From Local Stoage - PER HOUR
         // Create Variable For Each Hours Stored Input
