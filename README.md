@@ -65,7 +65,7 @@ Throughout working on this challenge, I sought the knowledge and advice from mul
 #
 ## Deployment
 Below is the link to the deployed webpage using GitHub Pages:
-- INSERT LINK HERE
+- https://maccersm8.github.io/Work-Day-Planner/
 
 #
 ## License
